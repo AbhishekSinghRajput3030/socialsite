@@ -7,6 +7,8 @@ app.use('/',require('./routes'));
 //set up the view engine
 app.set('view engine','ejs');
 app.set('views','./views');
+app.set('profile','./users')
+app.set('post','./posts')
 
 
 app.listen(port,function(err){
