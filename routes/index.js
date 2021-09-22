@@ -1,6 +1,6 @@
 const express = require('express')
-
 const router = express.Router();
+
 
 //acesing controller from this router
 const homeController = require('../controllers/home_controller');
