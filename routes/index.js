@@ -9,7 +9,7 @@ router.get('/',homeController.home);
 
 /*considering this as the index of other routes we want this to control the other routes*/
 
-/*any reuest that comes with forward slash appended, it with user  will be forwarded 
+/*any request that comes with forward slash appended, it with user  will be forwarded 
 to users routes similarly we will creates for like comment etc also*/
 router.use('/users',require('./users'));
 
