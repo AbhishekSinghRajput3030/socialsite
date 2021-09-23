@@ -13,9 +13,9 @@ const sassMiddleware = require('node-sass-middleware');
 
 app.use(sassMiddleware({
     src: './assets/scss', //place where scss file is
-    dest:'./assets/scss', 
+    dest:'./assets/css', 
     debug: true,          //do i need to show error which exists during compilation
-    outputStyle:'expanded',
+    outputStyle:'extended',
     prefix: '/css'        //where should server look for css file
 }));
 
