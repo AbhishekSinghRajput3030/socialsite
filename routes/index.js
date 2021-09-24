@@ -12,7 +12,7 @@ router.get('/',homeController.home);
 /*any request that comes with forward slash appended, it with user  will be forwarded 
 to users routes similarly we will creates for like comment etc also*/
 router.use('/users',require('./users'));
-
-router.use('/posts',require('./posts'))
+router.use('/posts',require('./posts'));
+router.use('/comments',require('./comments'));
 
 module.exports = router;
