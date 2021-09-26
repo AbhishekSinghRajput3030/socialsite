@@ -10,6 +10,8 @@ const passport = require('passport');
 const passportLocal = require('./config/passport-local-strategy');
 const MongoStore = require('connect-mongo')(session);
 const sassMiddleware = require('node-sass-middleware');
+const flash=require('connect-flash')
+const customMware = require('./config/middleware')
 
 app.use(sassMiddleware({
     src: './assets/scss', //place where scss file is
@@ -30,7 +32,7 @@ app.set('layout extractScripts', true);
 //set up the view engine
 app.set('view engine', 'ejs');
 app.set('views', './views');
-app.set('post', './posts')
+
 
 //mongo store is used to store the ession cookie in the db
 app.use(session({
@@ -56,9 +58,12 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(passport.setAuthenticatedUser);
 
+app.use(flash());
+app.use(customMware.setFlash);
+
 //while using passport initialize routes after initializing routes as passports are also middlewares
 //use expres router
-app.use('/', require('./routes'));
+app.use('/',require('./routes'));
 
 
 app.listen(port, function (err) {
