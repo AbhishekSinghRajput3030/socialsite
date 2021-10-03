@@ -5,15 +5,10 @@
   "css/home.css": "css/home-3fe2549d44.css",
   "css/layout.css": "css/layout-ad7fced993.css",
   "css/user_profile.css": "css/user_profile-bf94b0b59a.css",
-  "js/chat_engine.js": "js/chat_engine-67144dda99.js",
-  "js/home_post_comments.js": "js/home_post_comments-0c7ee51d25.js",
-  "js/home_posts.js": "js/home_posts-05dbbf6381.js",
-  "js/toggle_likes.js": "js/toggle_likes-0e3d81481c.js",
   "scss/chat_box.css": "scss/chat_box-3aa9f1fb21.css",
   "scss/footer.css": "scss/footer-80b8801692.css",
   "scss/header.css": "scss/header-0ca57cce00.css",
   "scss/home.css": "scss/home-3fe2549d44.css",
   "scss/layout.css": "scss/layout-ad7fced993.css",
-  "scss/user_profile.css": "scss/user_profile-f5f65c3380.css",
-  "view-helpers.js": "view-helpers-784a4589c4.js"
+  "scss/user_profile.css": "scss/user_profile-f5f65c3380.css"
 }
