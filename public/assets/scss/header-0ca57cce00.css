@@ -1,0 +1,19 @@
+#layout-header nav {
+  background-color: #2196f3;
+  color: white;
+  display: flex;
+  justify-content: space-between; }
+  #layout-header nav .mini-logo p {
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 5px;
+    font-size: 1.4rem; }
+  #layout-header nav .auth-links ul {
+    display: flex;
+    margin: 5% 5px;
+    list-style-type: none; }
+    #layout-header nav .auth-links ul li {
+      margin-right: 15px; }
+  #layout-header nav a {
+    text-decoration: none;
+    color: white; }

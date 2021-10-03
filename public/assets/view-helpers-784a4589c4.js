@@ -1,0 +1,1 @@
+const env=require("./environment"),fs=require("fs"),path=require("path");module.exports=e=>{e.locals.assetPath=function(e){return"development"==env.name?e:"/"+JSON.parse(fs.readFileSync(path.join(__dirname,"../public/assets/rev-manifest.json")))[e]}};
