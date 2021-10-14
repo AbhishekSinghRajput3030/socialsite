@@ -1,10 +1,14 @@
 
-const gulp = require('gulp');
-const sass = require('gulp-sass');
+//const gulp = require('gulp');
+import gulp from 'gulp';
+//const sass = require('gulp-sass');
+import sass from 'gulp-sass';
 const cssnano = require('gulp-cssnano');
 const rev = require('gulp-rev');
-const uglify = require('gulp-uglify-es').default;
-const imagemin = require('gulp-imagemin');
+import uglify from 'gulp-uglify-es';
+//const uglify = require('gulp-uglify-es').default;
+//const imagemin = require('gulp-imagemin');
+import imagemin from 'gulp-imagemin';
 const del = require('del');
 
 gulp.task('css', function(done){             //task to minify sccs

@@ -1,7 +1,12 @@
+//import express from 'express';
 const express = require('express');
+//import env from 'morgan';
 const env = require('./config/environment'); 
+//import logger from 'morgan'
 const logger = require('morgan');
+//import cookieParser from 'cookie-parser';
 const cookieParser = require('cookie-parser');
+//import db from './config/mongoose.js'
 const db = require('./config/mongoose');
 const app = express();
 require('./config/view-helpers')(app)
