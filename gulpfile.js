@@ -5,7 +5,6 @@ const cssnano = require('gulp-cssnano');
 const rev = require('gulp-rev');
 const uglify = require('gulp-uglify-es').default;  //use to minify the js
 const imagemin = require('gulp-imagemin');
-const imagemin = require('gulp-imagemin');
 const del = require('del');
 
 gulp.task('css', function(done){             //task to minify sccs
