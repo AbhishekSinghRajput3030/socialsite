@@ -36,7 +36,7 @@ if (env.name =='development'){
 }
 
 
-app.use(express.urlencoded());
+app.use(express.urlencoded(extends));
 app.use(cookieParser());
 
 app.use(express.static(env.asset_path));  //as path of asset is stored in environment.js
